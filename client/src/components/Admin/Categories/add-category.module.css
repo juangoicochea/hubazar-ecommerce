@@ -1,0 +1,80 @@
+.background {
+    max-width: 100%;
+    height: 100%;
+}
+
+.maxWidth {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.formContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70vh;
+}
+
+.formCat {
+    width: 30vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: transparent;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px var(--fontSeccondary);
+    transition: 1s all;
+    color: var(--fontSeccondary);
+}
+
+.formCat:hover {
+    height: 60vh;
+    font-size: 20px;
+    color: var(--fontPrimary);
+    background-image: -webkit-linear-gradient(top left, var(--background), rgb(240, 224, 4));
+    box-shadow: 1px 1px 10px 2px var(--fontSeccondary);
+}
+
+.submit {
+    width: 5vw;
+    height: 3vh;
+    border: transparent;
+    border-radius: 3px;
+    transition: 0.16s;
+}
+
+.submit:hover {
+    background-color: var(--fontPrimary);
+    color: azure;
+}
+
+.submitDisabled {
+    width: 5vw;
+    height: 3vh;
+    border: transparent;
+    border-radius: 3px;
+}
+
+.formSubCat {
+    width: 30vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: transparent;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px var(--fontSeccondary);
+    transition: 1s all;
+    color: var(--fontSeccondary);
+}
+
+.formSubCat:hover {
+    height: 60vh;
+    font-size: 20px;
+    color: var(--fontPrimary);
+    background-image: -webkit-linear-gradient(top left, var(--background), rgb(240, 224, 4));
+    box-shadow: 1px 1px 10px 2px var(--fontSeccondary);
+}

@@ -1,0 +1,82 @@
+
+.ButtonGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.ButtonSuccess {
+    background-color: var(--primary-color);
+    color: var(--fontPrimary);
+}
+
+.ButtonReset {
+    background-color: transparent;
+    color: var(--background);
+}
+
+.ButtonRegular {
+    background-color: var(--primary-color);
+    color: var(--background);
+}
+
+.Button {
+    background-color: transparent;
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+    width: 25px;
+    padding: 0px;
+    margin: 2px;
+}
+
+ .Button:hover {
+        color: white;
+        cursor: pointer;
+    }
+
+.Badge {
+    color: var(--background);
+    border-radius: 5px;
+    margin: 5px;
+    width: 3rem;
+}
+
+.Badge:hover {
+        background-color: black;
+        color: white;
+    }
+
+
+.link {
+    position: relative;
+    color: var(--fontSeccondary);
+    margin-left: 1vw;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link:before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: var(--fontPrimary);
+    position: absolute;
+    bottom: 140%;
+    transition: 0.4s ease-out;
+}
+
+.link:hover::before {
+    width: 100%;
+}
+
+.link:hover {
+    color: var(--fontPrimary);
+    transition: 0.16s ease-out;
+    -webkit-transition: 0.16s ease-out;
+    -moz-transition: 0.16s ease-out;
+    -ms-transition: 0.16s ease-out;
+    -o-transition: 0.16s ease-out;
+}

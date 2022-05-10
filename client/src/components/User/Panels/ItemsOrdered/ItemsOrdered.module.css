@@ -1,0 +1,107 @@
+.orderStatusWrap {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px
+}
+.orderInfoWrap {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.orderId {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.orderDate {
+    font-size: 1rem;
+}
+.orderStatus {
+    color: #e91e63;
+    border-color: #e91e63;
+    border: 1px solid #d1d1d1;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 5px 10px;
+    vertical-align: top;
+    font-size: 1rem;
+}
+.orderDetailsItems {
+    margin-top: 10px;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    position: re
+}
+.tableWrapper {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.tableOrderItems {
+    width: 100%;
+    border-style: hidden;
+    border-collapse: collapse;
+}
+.tableOrderItems tr th {
+    border-bottom: 1px solid #d1d1d1;
+    width: auto;
+    font-weight: 500;
+    border-top: 1px solid #ccc;
+    padding: 15px 10px;
+    background: #f1f1f1;
+    flex-grow: 1;
+    max-width: 100%;
+    font-size: 0.9rem;
+}
+.tableOrderItems tr td {
+    padding: 10px;
+    width: auto;
+    flex-grow: 1;
+    max-width: 100%;
+}
+.productItemName {
+    margin: 0;
+    font-size: 1.1rem;
+    display: block;
+    font-weight: 400;
+}
+.price {
+    font-weight: 500;
+}
+.qty, .subtotal {
+    text-align: right;
+}
+.tableOrderItems tbody tr td {
+    padding: 10px;
+    width: auto;
+}
+.itemsQty {
+    margin: 0;
+    padding: 0;
+    list-style: none none;
+}
+.priceExcludingTax {
+    display: block;
+    line-height: 1;
+    white-space: nowrap;
+}
+tfoot {
+    background: #f5f5f5;
+}
+tfoot th, tfoot td {
+    border: none !important;
+}
+tfoot tr:first-child th, tfoot tr:first-child td {
+    border-top: 1px solid #d1d1d1 !important;
+    padding-top: 15px;
+}
+.mark {
+    text-align: right;
+    padding: 3px 10px;
+}
+.amount {
+    text-align: right;
+    padding: 3px 10px;
+}

@@ -1,0 +1,176 @@
+.container {
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.logo {
+    float: left;
+    width: 225px;
+    height: fit-content;
+}
+.logoContainer {
+    width: fit-content;
+}
+.searchBar {
+    float: left;
+}
+.iconsContainer {
+    float: left;
+}
+.icons { 
+    float: left;
+    display: flex;
+    flex-direction: row;
+}
+.icon {
+    color: black;
+    margin: 0 10px;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+.icon:hover {
+    color: #F9C801;
+}
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.loginLink {
+    color: #02354A;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+.loginLink:hover {
+    color: #8C8C8C;
+}
+.registerLink {
+    color: #8C8C8C;
+    cursor: pointer;
+}
+.registerLink:hover {
+    color: #02354A;
+}
+.cart {
+    position: relative;
+    width: fit-content;
+}
+.cart span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: -5px;
+    right: 2px;
+    text-align: center;
+    background-color: #F9C801;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    line-height: 20px;
+    font-weight: 500;
+}
+.btn {
+    padding: 5px;
+    width: 50%;
+    border: none;
+    background-color: #F9C801;
+    border-radius: 3px;
+    cursor: pointer;
+    text-transform: capitalize;
+    margin-top: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+
+    transition: 0.2s;
+}
+.btnLogout {
+    padding: 5px;
+    width: 50%;
+    border: none;
+    background-color: #F9C801;
+    border-radius: 3px;
+    cursor: pointer;
+    text-transform: capitalize;
+    margin-top: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    height: 38px;
+
+    transition: 0.2s;
+}
+.btn:hover, .btnLogout:hover {
+    background-color: #dcb003;
+}
+.logoutContainer {
+    float: left;
+}
+.logoutContainer a {
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+
+    transition: 00.2s;
+}
+.logoutContainer a:hover {
+    text-decoration: underline;
+}
+.loginUserMobile {
+    display: none;
+    float: right;
+    padding: 10px 15px 0 0;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 650px) {
+    .container {
+        flex-direction: column;
+        padding-top: 0;
+    }
+    .logoContainer {
+        width: 100%;
+        float: left;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    .logo {
+        float: none;
+        width: 195px;
+    }
+    .icon {
+        margin: 0 5px;
+    }
+    .iconsContainer {
+        display: none;
+    }
+    .loginUserMobile {
+        display: block;
+        padding: 10px 15px 0 15px;
+        width: calc(100% - 30px);
+    }
+    .logoutContainer {
+        float: right;
+        text-align: right;
+    }
+    .btnLogout {
+        padding: 0;
+        font-size: 1rem;
+        height: 28px;
+        margin-top: 5px;
+    }
+    .login {
+        display: block;
+        justify-content: right;
+        align-items: right;
+        float: right;
+    }
+}

@@ -1,0 +1,31 @@
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import styles from './needLoginOrRegister.module.css'
+
+const NeedLoginOrRegister = () => {
+    const navigate = useNavigate()
+    return (
+        <div className={styles.background}>
+            <div className={styles.backgroundModal}>
+                <div className={styles.modal} >
+                    <h3 className={styles.tittle}>You need to be authenticated to continue</h3>
+                    <div className={styles.options}>
+                        <div className={styles.signIn}>
+                            <div>Have you an account?</div>
+                            <div className={styles.butContent}>
+                                <span className={styles.buttonBefore}></span>
+                                <button onClick={() => { navigate('/login') }} className={styles.buttonSignIn}>Sign in</button>
+                            </div>
+                        </div>
+                        <div className={styles.signUp}>
+                            <div>You're new?</div>
+                            <button onClick={() => { navigate('/register') }} className={styles.buttonSignUp}>Sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default NeedLoginOrRegister

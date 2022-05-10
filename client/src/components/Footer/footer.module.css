@@ -1,0 +1,50 @@
+.background {
+    float: left;
+    background-color: #EDF1F2;
+    padding: 12px 0;
+    position: relative;
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div {
+    display: flex;
+    justify-content: center;
+}
+
+.span {
+    font-size: 14px;
+    color: var(--fontSeccondary);
+    margin-left: 1vw;
+}
+
+.span2 {
+    font-size: 14px;
+    padding-top: 5px;
+    color: var(--fontSeccondary);
+}
+
+.img {
+    width: 100px;
+    margin-right: 1vw;
+}
+
+@media screen and (max-width: 650px) {
+    .span {
+        margin: 0 auto 1vw auto;
+        font-size: 14px;
+        color: var(--fontSeccondary);
+    }
+
+    .div {
+        display: none;
+    }
+}

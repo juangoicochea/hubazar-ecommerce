@@ -1,0 +1,277 @@
+.container {
+    margin: 1rem auto;
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+.filters {
+    min-width: 160px;
+    height: auto;
+    padding: 1rem;
+    background-color: #EDF1F2;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.filters h2 {
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.filters input, .filters select {
+    width: calc(100% - 20px);
+    height: 33px;
+    padding: 0 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+.filters select {
+    margin-top: 20px;
+    width: 100%;
+}
+.filters .buttonSuccess {
+    width: 100%;
+    margin-top: 0px;
+}
+.productsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+.menuList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 20%;
+    height: auto;
+    border-radius: 3px;
+    background-color: #EDF1F2;
+}
+.background {
+    display: flex;
+    margin-top: 20px;
+    background-color: var(--background);
+}
+.listContainer {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+.cardItem {
+    margin: 0.5rem 20px;
+    width: 206px;
+    height: 414px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+    border-radius: 10px;
+    transition: all 0.16s;
+}
+.cardItem:hover {
+    box-shadow: 1px 3px 1px 1px var(--background);
+}
+.cardHeader {
+    width: 155px;
+    height: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+.cardBody {
+    width: 195px;
+    height: auto;
+}
+.cardFooter {
+    width: 195px;
+    height: auto;
+    padding: 0 0.5rem;
+}
+.buttonGroup {
+    width: fit-content;
+    margin: 0 auto;
+}
+.buttonSuccess {
+    padding: 8px 15px;
+    width: 100%;
+    border: none;
+    background-color: #F9C801;
+    border-radius: 3px;
+    cursor: pointer;
+    text-transform: capitalize;
+    margin-top: 12px;
+
+    transition: 0.2s;
+}
+.buttonSuccess:hover {
+    background-color: #dcb003;
+}
+.buttonReset {
+    width: fit-content;
+    float: left;
+    background: none;
+    border: none;
+    padding: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.buttonsStock {
+    border: 1px solid #D0D9DC;
+    border-radius: 3px;
+    width: fit-content;
+    float: left;
+}
+.buttonRemove {
+    height: 22px;
+    background: none;
+    border: none;
+    color: #D0D9DC;
+    padding: 2px 8px;
+    cursor: pointer;
+}
+.buttonAdd {
+    height: 22px;
+    background: none;
+    border: none;
+    color: #D0D9DC;
+    padding: 2px 10px;
+    cursor: pointer;
+}
+.buttonAdd:hover, .buttonRemove:hover {
+    color: black;
+}
+.badge {
+    padding: 2px 10px;
+}
+.link {
+    position: relative;
+    color: var(--fontSeccondary);
+    margin-left: 1vw;
+    text-decoration: none;
+    cursor: pointer;
+}
+.link:hover {
+    color: var(--fontPrimary);
+    transition: 0.16s ease-out;
+}
+.title {
+    top: -5rem;
+    width: 100%;
+    height: 39px;
+    margin-bottom: 7px;
+    text-transform: capitalize;
+}
+.title a {
+    font-size: 0.9rem;
+    color: #666;
+    text-decoration: none;
+}
+.title a:hover {
+    text-decoration: underline;
+}
+.img {
+
+    width: 100%;
+    max-width: calc(100%);
+    max-height: 10rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.rate {
+    float: left;
+    text-align: left;
+}
+.stars {
+    float: left;
+    width: 15px;
+    color: var(--background);
+}
+.iconHearth {
+    float: right;
+}
+.iconHearthFilled {
+    float: right;
+    color: var(--background);
+}
+.priceContainer {
+    width: 100%;
+    float: left;
+    text-align: left;
+    margin: 5px 0 10px 0;
+}
+.price {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.available {
+    margin-left: 5px;
+    font-size: 0.9rem;
+}
+.noResults {
+    float: left;
+    text-align: left;
+    width: calc(100% - 40px);
+    height: auto;
+    padding: 15px;
+    background-color: #EDF1F2;
+    margin-left: 40px;
+    border-left: 4px solid black;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        margin-top: 0;
+        display: block;
+        flex-direction: unset;
+    }
+    .productsContainer {
+        width: 100%;
+    }
+    .menuList {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .cardItem {
+        width: 39%;
+        margin: 0.5rem 10px;
+        height: 380px;
+    }
+    .cardBody, .cardFooter {
+        width: 100%;
+    }
+    .filters {
+        width: calc(100% - 30px);
+        padding: 0 15px;
+    }
+    .title {
+        height: 58px;
+    }
+    .shareon {
+        min-width: 13px;
+        padding: 6px 10px;
+    }
+    .noResults {
+        width: 70%;
+        margin-left: 0;
+        margin-top: 50px;
+    }
+}

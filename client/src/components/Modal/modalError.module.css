@@ -1,0 +1,70 @@
+.background {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+}
+
+.maxWidth {
+    background-color: rgb(67, 65, 65);
+    color: var(--fontPrimary);
+    font-size: 20px;
+    opacity: 80%;
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -650px;
+    width: 1300px;
+    height: 600px
+}
+
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin: 10vh auto;
+    width: 800px;
+    height: 400px;
+    background-color: var(--background);
+    box-shadow: 1px 3px 10px 3px aliceblue;
+}
+
+.img {
+    background-color: aliceblue;
+    margin: 0 auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 800px;
+    height: 150px;
+    object-fit: scale-down;
+}
+
+.tittle {
+    font-size: 30px;
+    text-decoration: underline double;
+    text-decoration-color: aliceblue;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+}
+
+.body {
+    color: var(--fontSeccondary);
+}
+
+.button {
+    margin: 0 auto;
+    width: 5vw;
+    height: 3vh;
+    border: transparent;
+    border-radius: 3px;
+    transition: all 0.16s;
+}
+
+.button:hover {
+
+    background-color: var(--fontPrimary);
+    color: aliceblue;
+    box-shadow: 1px 0 5px 1px var(--fontPrimary);
+}

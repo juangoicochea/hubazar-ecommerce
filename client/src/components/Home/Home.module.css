@@ -1,0 +1,171 @@
+.background {
+    width: 100%
+}
+
+.carrousels {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2.5vh auto;
+    max-width: 1300px;
+}
+
+.titleContein {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ftTitle {
+    margin: 0 0 30px 0;
+    font-size: 1.2em;
+}
+
+.ft {
+    display: flex;
+    height: auto;
+    width: 45%;
+    justify-content: space-evenly;
+    margin-right: 1vw;
+    animation-name: slide;
+    animation-duration: 8.4s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes slide {
+    0% {
+        transition: ease-in;
+        opacity: 0%;
+    }
+
+    5% {
+        opacity: 0%;
+    }
+
+    15% {
+
+        opacity: 100%;
+    }
+
+    20% {
+        opacity: 100%;
+    }
+
+    85% {
+        opacity: 100%;
+    }
+
+    100% {
+        transition: ease-in-out;
+        opacity: 0%;
+    }
+}
+
+.ltTitle {
+    margin: 0 0 30px 0;
+    font-size: 1.2em;
+}
+
+.lt {
+    display: flex;
+    width: 45%;
+    height: auto;
+    justify-content: space-evenly;
+    margin-left: 1vw;
+    animation-name: slide;
+    animation-duration: 8.4s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.iconsContainer {
+    margin: 70px auto 60px;
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.iconText {
+    float: left;
+    padding-right: 50px;
+    display: flex;
+    text-align: left;
+    border-right: 2px solid #666;
+    width: fit-content;
+}
+
+.icon {
+    margin-right: 20px;
+}
+
+.iconText div {
+    padding: 5px 0;
+}
+
+.textGrey {
+    font-size: 0.85rem;
+    color: #666666;
+}
+
+.displayDesktop {
+    display: flex;
+}
+
+.displayMobile {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .iconText {
+        flex-direction: column;
+        padding-right: 0;
+        border-right: 0;
+    }
+
+    .iconsContainer {
+        width: 80%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .carrousels div div {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .displayDesktop {
+        display: none;
+    }
+
+    .displayMobile {
+        display: block;
+    }
+
+    .carrousels {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ft,
+    .lt {
+        display: flex;
+        width: 100%;
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-right: 1vw;
+    }
+
+    .lt {
+        margin-top: 50px;
+    }
+
+    .sliderMain div div div div div {
+        background-position: center;
+    }
+
+    .sliderMain button {
+        padding: 20px !important;
+    }
+}

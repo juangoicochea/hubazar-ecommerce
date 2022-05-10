@@ -1,0 +1,127 @@
+.background {
+    display: flex;
+    margin-top: 20px;
+    background-color: var(--background);
+}
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    height: 41px;
+    align-items: center;
+}
+.link {
+    position: relative;
+    color: var(--fontSeccondary);
+    margin-right: 1vw;
+    padding: 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+.link:before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: var(--fontPrimary);
+    position: absolute;
+    bottom: 140%;
+    transition: 0.4s ease-out;
+}
+.link:hover::before {
+    width: 100%;
+}
+.link:hover {
+    color: var(--fontPrimary);
+    transition: 0.16s ease-out;
+}
+.label {
+    position: relative;
+    color: var(--fontSeccondary);
+    margin-right: 1vw;
+    padding: 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+.label:before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: var(--fontPrimary);
+    position: absolute;
+    bottom: 140%;
+    transition: 0.4s ease-out;
+}
+.label:hover::before {
+    width: 100%;
+}
+.label:hover {
+    color: var(--fontPrimary);
+    transition: 0.16s ease-out;
+}
+.ul {
+    z-index: 1;
+    position: absolute;
+    margin: 15px auto;
+    background-color: var(--background);
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    border-radius: 5px;
+    box-shadow: 3px 2px 10px var(--fontSeccondary);
+    animation-name: slide;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateY(0px);
+    }
+}
+
+.li {
+    color: var(--fontSeccondary);
+    position: relative;
+    display: flex;
+    width: max-content;
+    height: 100%;
+    list-style: none;
+}
+.li:hover {
+    color: var(--fontPrimary);
+}
+
+@media screen and (max-width: 1000px) {
+    .background {
+        position: relative;
+        top: 3px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .background {
+        position: relative;
+        top: 3px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .container {
+        justify-content: center;
+        margin-top: 10px;
+        margin: 5px;
+    }
+    .link {
+        padding: 0 7px;
+        font-size: 1.1rem;
+    }
+}

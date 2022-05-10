@@ -1,0 +1,48 @@
+.content {
+    width: 100%;
+    height: 100%;
+}
+
+.inputClean {
+    height: 300px;
+    width: 100%;
+    resize: none;
+}
+
+
+.inputOfError {
+    height: 300px;
+    width: 100%;
+    resize: none;
+    border: 1px solid #47A506;
+    outline: none;
+    border-radius: 3px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.inputOfError:focus {
+    box-shadow: 1px 1px 2px 1px #6666;
+}
+
+.inputOnError {
+    height: 300px;
+    width: 100%;
+    resize: none;
+    outline: none;
+    border: 1px solid #C3482E;
+    border-radius: 3px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.offError {
+    opacity: 0%;
+}
+
+
+.onError {
+    color: #C3482E;
+    font-size: 0.8em;
+    height: 2vw;
+}

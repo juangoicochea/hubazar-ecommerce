@@ -1,0 +1,43 @@
+.container {
+    width: 15%;
+    min-width: 160px;
+    height: auto;
+    padding: 15px 35px;
+    background-color: #EDF1F2;
+    text-align: left;
+}
+.container h2 {
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.container ul {
+    padding-left: 0;
+}
+.container li {
+    text-transform: capitalize;
+    list-style: none;
+    padding: 5px 0;
+}
+.container li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.selected {
+    font-weight: bold;
+}
+@media screen and (max-width: 1000px) {
+    .container {
+        float: left;
+        width: calc(100% - 40px);
+        padding: 15px 20px;
+    }
+    .container li {
+        list-style: none;
+        padding: 5px 10px 5px 0;
+        display: inline-block;
+        border-right: 1px solid #F9C801;
+        margin-right: 10px;
+        line-height: 28px;
+    }
+}

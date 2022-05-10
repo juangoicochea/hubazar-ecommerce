@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+
+html {
+  height: 100%;
+}
+
+html, body {
+  min-height: 100% !important;
+  height: 100%;
+}
+
+:root {
+  --background: #F9C801;
+  --fontPrimary: #02354A;
+  --fontSeccondary: #666666;
+  --primary-color: #0d47a1;
+  --secondary-color: #f50057;
+  --tertiary-color: #ff6f00;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Work Sans', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-container {
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 98vw;
+  height: 60vh;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.loader {
+  --s: 180px;
+  /*thesize*//*thecolors*//**/width: var(--s);
+  aspect-ratio: 8/5;
+  --_g: no-repeat radial-gradient(#000 68%,#0000 71%);
+  -webkit-mask: var(--_g),var(--_g),var(--_g);
+  -webkit-mask-size: calc(var(--s)/4) calc(var(--s)/4);
+  background:     conic-gradient(var(--primary-color) 50%,var(--secondary-color) 0) no-repeat,    conic-gradient(var(--tertiary-color) 50%,var(--fontSeccondary) 0) no-repeat;
+  background-size: 200% 50%;
+  animation:     b 4s infinite linear,    l 2s infinite;
+  -webkit-animation:     b 4s infinite linear,    l 2s infinite;
+}
+
+@keyframes l {
+  0%    {-webkit-mask-position: 0% 0%  ,50% 0%  ,100% 0%  }
+  16.67%{-webkit-mask-position: 0% 100%,50% 0%  ,100% 0%  }
+  33.33%{-webkit-mask-position: 0% 100%,50% 100%,100% 0%  }
+  50%   {-webkit-mask-position: 0% 100%,50% 100%,100% 100%}
+  66.67%{-webkit-mask-position: 0% 0%  ,50% 100%,100% 100%}
+  83.33%{-webkit-mask-position: 0% 0%  ,50% 0%  ,100% 100%}
+  100%  {-webkit-mask-position: 0% 0%  ,50% 0%  ,100% 0%  }
+}
+@keyframes b {
+  0% ,24.9% {background-position: 0%   0%,0%   100%}
+  25%,49.9% {background-position: 100% 0%,0%   100%}
+  50%,74.9% {background-position: 100% 0%,100% 100%}
+  75%,100%  {background-position: 0%   0%,100% 100%}
+}

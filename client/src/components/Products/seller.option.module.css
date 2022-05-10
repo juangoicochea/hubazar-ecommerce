@@ -1,0 +1,88 @@
+.optionSeller {
+    color: var(--fontSeccondary);
+    padding: 15px 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-bottom: 1vh;
+    margin-left: 0.5vw;
+    background-color: aliceblue;
+    animation-name: slide;
+    animation-duration: 0.5s;
+    animation-direction: normal;
+    transition: all 0.16s;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(500px);
+    }
+
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.optionSeller:hover {
+    color: var(--fontPrimary);
+    box-shadow: 5px 5px 5px 0px var(--fontSeccondary);
+}
+
+.sellerName {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    font-size: 20px;
+}
+
+
+.cardSeller {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--fontSeccondary);
+    padding-bottom: 1vh;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.contentCount {
+    display: flex;
+}
+
+.incDec {
+    border: transparent;
+    border-radius: 2.5px;
+    background-color: var(--fontSeccondary);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: 00.2s;
+}
+
+.incDec:hover {
+    background-color: black;
+    color: aliceblue;
+}
+
+.count {
+    width: 20px;
+    height: 20px;
+}
+
+.cart {
+    color: var(--fontPrimary);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: var(--background);
+    border: transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 5px 8px;
+    text-transform: capitalize;
+    transition: 00.2s;
+}
+
+.cart:hover {
+    background-color: #daaf05;
+    box-shadow: 1px 1px 1px 1px #D0D9DC;
+}

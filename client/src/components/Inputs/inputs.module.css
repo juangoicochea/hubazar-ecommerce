@@ -1,0 +1,48 @@
+.content {
+    margin: 0 auto;
+}
+
+.inputClean {
+    border: 1px solid #8B90A0;
+    outline: none;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+
+.inputOfError {
+    border: 1px solid #47A506;
+    outline: none;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+
+.inputOfError:focus {
+    outline: none;
+    box-shadow: 1px 1px 2px 1px #6666;
+
+}
+
+.offError {
+    opacity: 0%;
+    margin: 0 auto;
+}
+
+
+
+.inputOnError {
+    border: 1px solid #C3482E;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+
+.inputOnError:focus {
+    outline: none;
+    box-shadow: 1px 1px 2px 1px #6666;
+}
+
+.onError {
+    text-align: left;
+    color: #C3482E;
+    font-size: 0.8em;
+    height: 2vw;
+}
